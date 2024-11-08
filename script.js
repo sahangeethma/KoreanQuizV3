@@ -15,6 +15,7 @@ let quizDirection = "korean-to-sinhalese"; // or "sinhalese-to-korean"
 let adminPassword = "admin"; // Default admin password
 let randomIndex;
 let currentWord;
+let incorrectAnswerIndexes = [];
 
 // Fetch the vocabulary data from the JSON file
 fetch("words.json")
@@ -55,18 +56,22 @@ function loadQuiz() {
     quizDirection === "korean-to-sinhalese"
       ? currentWord.sinhalese
       : currentWord.korean;
-  const incorrectAnswers = vocabularyData
-    .filter(
-      (word) =>
-        word[
-          quizDirection === "korean-to-sinhalese" ? "sinhalese" : "korean"
-        ] !== correctAnswer
-    )
-    .map(
-      (word) =>
-        word[quizDirection === "korean-to-sinhalese" ? "sinhalese" : "korean"]
-    )
-    .slice(0, 3);
+  const incorrectAnswers = [];
+  let i = 0;
+  while (incorrectAnswers.length < 3) {
+    const randomIndex = Math.floor(Math.random() * vocabularyData.length);
+    const word = vocabularyData[randomIndex];
+    const answer =
+      quizDirection === "korean-to-sinhalese" ? word.sinhalese : word.korean;
+    if (answer !== correctAnswer && !incorrectAnswers.includes(answer)) {
+      incorrectAnswers.push(answer);
+    }
+    i++;
+    if (i > 100) {
+      // Prevent an infinite loop in case there are not enough unique incorrect answers
+      break;
+    }
+  }
 
   const allAnswers = [correctAnswer, ...incorrectAnswers].sort(
     () => Math.random() - 0.5

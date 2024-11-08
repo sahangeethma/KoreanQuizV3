@@ -211,6 +211,10 @@ document.getElementById("logout-btn").addEventListener("click", () => {
   logout();
 });
 
+document.getElementById("w2json-btn").addEventListener("click", () => {
+  window.location.replace("https://sahangeethma.github.io/Vocabulary2Json/");
+});
+
 // Helper functions
 function showElement(id) {
   document.getElementById(id).style.display = "block";

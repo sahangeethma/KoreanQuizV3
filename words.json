@@ -1,38 +1,218 @@
 [
-    {
-        "korean": "안녕하세요",
-        "sinhalese": "ආයුබෝවන්"
-      },
-      {
-        "korean": "감사합니다",
-        "sinhalese": "ස්තූතියි"
-      },
-      {
-        "korean": "사랑해요",
-        "sinhalese": "ආදරෙයි"
-      },
-      {
-        "korean": "친구",
-        "sinhalese": "යාළුවා"
-      },
-      {
-        "korean": "가족",
-        "sinhalese": "පවුල"
-      },
-      {
-        "korean": "가다",
-        "sinhalese": "යනවා"
-      },
-      {
-        "korean": "오다",
-        "sinhalese": "එනවා"
-      },
-      {
-        "korean": "아기",
-        "sinhalese": "ළමයා"
-      },
-    {
-        "korean": "한국",
-        "sinhalese": "කොරියාව"
-    }
+  {
+    "korean": "안녕하세요",
+    "sinhalese": "ආයුබෝවන්"
+  },
+  {
+    "korean": "감사합니다",
+    "sinhalese": "ස්තූතියි"
+  },
+  {
+    "korean": "사랑해요",
+    "sinhalese": "ආදරෙයි"
+  },
+  {
+    "korean": "친구",
+    "sinhalese": "යාළුවා"
+  },
+  {
+    "korean": "가족",
+    "sinhalese": "පවුල"
+  },
+  {
+    "korean": "가다",
+    "sinhalese": "යනවා"
+  },
+  {
+    "korean": "오다",
+    "sinhalese": "එනවා"
+  },
+  {
+    "korean": "아기",
+    "sinhalese": "ළමයා"
+  },
+  {
+      "korean": "한국",
+      "sinhalese": "කොරියාව"
+  },
+  {
+      "korean": "정비",
+      "sinhalese": "අලුත්වැඩියාව"
+  },
+  {
+      "korean": "공장",
+      "sinhalese": "ගෘහස්ථය"
+  },
+  {
+      "korean": "작업",
+      "sinhalese": "කාර්යය"
+  },
+  {
+      "korean": "도구",
+      "sinhalese": "මෙවලම"
+  },
+  {
+      "korean": "휴식",
+      "sinhalese": "විවේකය"
+  },
+  {
+      "korean": "월급",
+      "sinhalese": "වැටුප"
+  },
+  {
+      "korean": "사무실",
+      "sinhalese": "කාර්යාලය"
+  },
+  {
+      "korean": "의사",
+      "sinhalese": "වෛද්‍යවරයා"
+  },
+  {
+      "korean": "병원",
+      "sinhalese": "රෝහල"
+  },
+  {
+      "korean": "응급",
+      "sinhalese": "අත්‍යවශ්‍ය"
+  },
+  {
+      "korean": "약",
+      "sinhalese": "ඖෂධය"
+  },
+  {
+      "korean": "고장",
+      "sinhalese": "නොමැත"
+  },
+  {
+      "korean": "필요하다",
+      "sinhalese": "අවශ්‍යයි"
+  },
+  {
+      "korean": "도와주다",
+      "sinhalese": "උදව් කිරීම"
+  },
+  {
+      "korean": "계산하다",
+      "sinhalese": "ගණනය කිරීම"
+  },
+  {
+      "korean": "지각하다",
+      "sinhalese": "නොපැමිණීම"
+  },
+  {
+      "korean": "수리하다",
+      "sinhalese": "අලුත්වැඩියාව"
+  },
+  {
+      "korean": "청소하다",
+      "sinhalese": "පිළියෙල කිරීම"
+  },
+  {
+      "korean": "회의",
+      "sinhalese": "සමුළුව"
+  },
+  {
+      "korean": "훈련",
+      "sinhalese": "පුහුණුව"
+  },
+  {
+      "korean": "경험",
+      "sinhalese": "අත්දැකීම"
+  },
+  {
+      "korean": "직원",
+      "sinhalese": "සේවකයා"
+  },
+  {
+      "korean": "손님",
+      "sinhalese": "අමුත්තන්"
+  },
+  {
+      "korean": "가격",
+      "sinhalese": "මිල"
+  },
+  {
+      "korean": "품질",
+      "sinhalese": "ගුණාත්මකතාව"
+  },
+  {
+      "korean": "판매",
+      "sinhalese": "විකිණීම"
+  },
+  {
+      "korean": "구매",
+      "sinhalese": "මිලදී ගැනීම"
+  },
+  {
+      "korean": "제품",
+      "sinhalese": "නිෂ්පාදන"
+  },
+  {
+      "korean": "배송",
+      "sinhalese": "බෙදාහැරීම"
+  },
+  {
+      "korean": "환불",
+      "sinhalese": "ආපසු ගෙවීම"
+  },
+  {
+      "korean": "교환",
+      "sinhalese": "වෙනස් කිරීම"
+  },
+  {
+      "korean": "신청서",
+      "sinhalese": "අයදුම් පත"
+  },
+  {
+      "korean": "면접",
+      "sinhalese": "ඉදිරිපත් කිරීම"
+  },
+  {
+      "korean": "일정",
+      "sinhalese": "වෙන්කර ගත් දිනය"
+  },
+  {
+      "korean": "주소",
+      "sinhalese": "ලිපිනය"
+  },
+  {
+      "korean": "전화번호",
+      "sinhalese": "දුරකථන අංකය"
+  },
+  {
+      "korean": "목표",
+      "sinhalese": "ඉලක්කය"
+  },
+  {
+      "korean": "성공",
+      "sinhalese": "සාර්ථකත්වය"
+  },
+  {
+      "korean": "실패",
+      "sinhalese": "අසාර්ථකත්වය"
+  },
+  {
+      "korean": "준비",
+      "sinhalese": "සූදානම් කිරීම"
+  },
+  {
+      "korean": "연습",
+      "sinhalese": "අභ්‍යාසය"
+  },
+  {
+      "korean": "책임",
+      "sinhalese": "වගකීම"
+  },
+  {
+      "korean": "변경",
+      "sinhalese": "වෙනස්කම්"
+  },
+  {
+      "korean": "확인",
+      "sinhalese": "තහවුරු කිරීම"
+  },
+  {
+      "korean": "응답",
+      "sinhalese": "ප්‍රතිචාර"
+  }
 ]

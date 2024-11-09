@@ -263,6 +263,94 @@
     {
       "korean": "삼",
       "sinhalese": "3 තුන "
+    },
+    {
+      "korean": "책을 펴세요",
+      "sinhalese": "පොත දිග හරිනවා "
+    },
+    {
+      "korean": "책을 덮으세요",
+      "sinhalese": "පොත වහනවා "
+    },
+    {
+      "korean": "보세요 / 보다",
+      "sinhalese": "බලන්න "
+    },
+    {
+      "korean": "들으세요",
+      "sinhalese": "සවන් දෙන්න "
+    },
+    {
+      "korean": "따라하세요",
+      "sinhalese": "මා කීවට පසු කියන්න "
+    },
+    {
+      "korean": "스세요 / 스다",
+      "sinhalese": "ලියන්න "
+    },
+    {
+      "korean": "이야기하세요",
+      "sinhalese": "කතාකරන්න "
+    },
+    {
+      "korean": "대답하세요",
+      "sinhalese": "පිළිතුරු දෙන්න "
+    },
+    {
+      "korean": "알겠어요? ",
+      "sinhalese": "තේරෙනව ද? "
+    },
+    {
+      "korean": "네, 알겠습니다",
+      "sinhalese": "ඔව්, තේරුණා "
+    },
+    {
+      "korean": "아니요, 모르겠습니다 ",
+      "sinhalese": "නැහැ, තේරුනේ නැ "
+    },
+    {
+      "korean": "질문 있어요? ",
+      "sinhalese": "ප්‍රශ්න තියනව ද? "
+    },
+    {
+      "korean": "네, 질문 있습니다 ",
+      "sinhalese": "ඔව්, ප්‍රශ්න තියනවා "
+    },
+    {
+      "korean": "아니요, 질문 없습니다 ",
+      "sinhalese": "නැහැ, ප්‍රශ්න නැ "
+    },
+    {
+      "korean": "안녕하세요",
+      "sinhalese": "ආයුබෝවන් "
+    },
+    {
+      "korean": "만나서 반갑습니다",
+      "sinhalese": "හමුවීම සතුටක් "
+    },
+    {
+      "korean": "안녕히 계세요",
+      "sinhalese": "හොඳින් ඉන්න"
+    },
+    {
+      "korean": "안녕히 가세요",
+      "sinhalese": "හොඳින් යන්න "
+    },
+    {
+      "korean": "감사합니다",
+      "sinhalese": "ස්තුතියි "
+    },
+    {
+      "korean": "아니에요",
+      "sinhalese": "සුළු දෙයක් don't thank"
+    },
+    {
+      "korean": "죄송합니다",
+      "sinhalese": "සමාවෙන්න "
+    },
+    {
+      "korean": "괜찮아요",
+      "sinhalese": "කමක් නෑ "
     }
   ]
-    } 
+}

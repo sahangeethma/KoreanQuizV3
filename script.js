@@ -5,14 +5,16 @@ const resultElement = document.getElementById("result");
 const scoreElement = document.getElementById("score");
 const directionButton = document.getElementById("direction-button");
 const settingButton = document.getElementById("setting-button");
+const mainButtons = document.getElementById("main-buttons");
+const adminButtons = document.getElementById("admin-buttons");
 const adminElement = document.getElementById("admin");
 
 // Initialize the quiz data, score, and direction
+
 let vocabularyData = [];
 let correctCount = 0;
 let wrongCount = 0;
 let quizDirection = "korean-to-sinhalese"; // or "sinhalese-to-korean"
-let adminPassword = "admin"; // Default admin password
 let randomIndex;
 let currentWord;
 let incorrectAnswerIndexes = [];
@@ -31,7 +33,9 @@ fetch("words.json")
 // Function to load a new quiz question
 function loadQuiz() {
   showElement("quiz-container");
+  showElement("main-buttons");
   hideElement("admin");
+  hideElement("admin-buttons");
 
   // Ensure we don't select the same word or the words before/after it
   do {
@@ -106,10 +110,6 @@ function loadQuiz() {
   scoreElement.textContent = `Score: ${correctCount} / ${
     correctCount + wrongCount
   } (${((correctCount / (correctCount + wrongCount)) * 100).toFixed(2)} %)`;
-
-  // Update the direction button text
-  directionButton.textContent =
-    quizDirection === "korean-to-sinhalese" ? "සිං > 한" : "한 > සිං";
 }
 
 // Update the displayVocabularyData function to clear previous content
@@ -138,17 +138,10 @@ function displayVocabularyData() {
   });
 }
 
-function checkPassword() {
-  const password = document.getElementById("password").value;
-  if (password === adminPassword) {
-    showAdmin();
-  } else {
-    alert("Incorrect password. Please try again.");
-  }
-}
-
 function showAdmin() {
   showElement("admin");
+  showElement("admin-buttons");
+  hideElement("main-buttons");
   hideElement("quiz-container");
 
   displayVocabularyData();
@@ -156,7 +149,9 @@ function showAdmin() {
 
 function logout() {
   showElement("quiz-container");
+  showElement("main-buttons");
   hideElement("admin");
+  hideElement("admin-buttons");
   correctCount = 0;
   wrongCount = 0;
 }
@@ -223,3 +218,11 @@ function showElement(id) {
 function hideElement(id) {
   document.getElementById(id).style.display = "none";
 }
+
+// Initialize the UI
+window.onload = function () {
+  showElement("quiz-container");
+  showElement("main-buttons");
+  hideElement("admin");
+  hideElement("admin-buttons");
+};

@@ -10,46 +10,56 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container my-5">
-      <h1 class="text-center mb-4" id="vocabulary-quiz">Quiz V3</h1>
-
+      <div class="card p-4 mb-4">
+        <h1 class="text-center" id="vocabulary-quiz">Quiz V3</h1>
+        <div id="main-buttons">
+          <button id="direction-button" class="btn btn-outline-primary mt-3">
+            <img src="imgs/language-translation.png" style="width: 20px" />
+          </button>
+          <button id="custom-button" class="btn btn-outline-dark mt-3">
+            <img src="imgs/customize.png" style="width: 20px" />
+          </button>
+          <button
+            id="setting-button"
+            onclick="showAdminLogin()"
+            class="btn btn-outline-dark btn-sm mt-3"
+          >
+            <img src="imgs/dictionary.png" style="width: 20px" />
+          </button>
+        </div>
+        <div id="admin-buttons">
+          <button
+            class="btn btn-outline-info mt-3"
+            id="w2json-btn"
+            onclick="w2json()"
+          >
+            <img src="imgs/bracket-curly.png" style="width: 20px" />
+          </button>
+          <button
+            class="btn btn-danger mt-3"
+            id="logout-btn"
+            onclick="logout()"
+          >
+            <img src="imgs/logout.png" style="width: 20px" />
+          </button>
+        </div>
+      </div>
       <div class="card p-4" id="quiz-container">
         <div id="question" class="mb-3"></div>
         <div id="answers" class="d-grid gap-2"></div>
         <div id="result" class="mt-3 fw-bold"></div>
         <div id="score" class="mt-3"></div>
-        <button id="direction-button" class="btn btn-primary mt-3">
-          Switch to Sinhalese to Korean
-        </button>
-        <button
-          id="setting-button"
-          onclick="showAdminLogin()"
-          class="btn btn-outline-dark btn-sm mt-3"
-        >
-          <i class="bi bi-gear"></i>Vocabulary
-        </button>
       </div>
 
       <div class="card p-4" id="admin" style="display: none">
         <div class="d-flex justify-content-between mb-3 align-items-center">
           <h3 id="adding-vocabulary">Vocabulary</h3>
-          <div class="d-grid gap-2 d-flex justify-content-md-end">
-            <button
-              class="btn btn-outline-info"
-              id="w2json-btn"
-              onclick="w2json()"
-            >
-              W2Json
-            </button>
-            <button class="btn btn-danger" id="logout-btn" onclick="logout()">
-              Logout
-            </button>
-          </div>
         </div>
         <div id="wordList" class="mb-3"></div>
       </div>

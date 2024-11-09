@@ -129,23 +129,29 @@ function displayVocabularyData() {
   const wordListDiv = document.getElementById("wordList");
   wordListDiv.innerHTML = ""; // Clear existing content
 
-  vocabularyData.forEach((item) => {
+  vocabularyData.forEach((item, index) => {
     const wordRow = document.createElement("div");
-    wordRow.classList.add("row", "mb-2");
+    wordRow.classList.add("row", "mb-3");
+
+    const indexItem = document.createElement("div");
+    indexItem.classList.add("col-2");
+    indexItem.textContent = index + 1;
+
+    const hr = document.createElement("hr");
+    hr.classList.add("my-2"); // Add some margin
 
     const koreanWordCol = document.createElement("div");
-    koreanWordCol.classList.add("col-5", "text-start");
+    koreanWordCol.classList.add("col-4", "text-start");
     koreanWordCol.textContent = item.korean;
 
     const sinhalseWordCol = document.createElement("div");
-    sinhalseWordCol.classList.add("col-5", "text-start");
+    sinhalseWordCol.classList.add("col-6", "text-start");
     sinhalseWordCol.textContent = item.sinhalese;
 
-    const actionCol = document.createElement("div");
-    actionCol.classList.add("col-2", "text-end");
-
+    wordRow.appendChild(indexItem);
     wordRow.appendChild(koreanWordCol);
     wordRow.appendChild(sinhalseWordCol);
+    wordRow.appendChild(hr);
     wordListDiv.appendChild(wordRow);
   });
 }
@@ -209,6 +215,15 @@ directionButton.addEventListener("click", () => {
     quizDirection === "korean-to-sinhalese"
       ? "sinhalese-to-korean"
       : "korean-to-sinhalese";
+
+  if (quizDirection === "korean-to-sinhalese") {
+    directionButton.classList.remove("btn-primary");
+    directionButton.classList.add("btn-outline-primary");
+  } else {
+    directionButton.classList.remove("btn-outline-primary");
+    directionButton.classList.add("btn-primary");
+  }
+
   loadQuiz();
 });
 

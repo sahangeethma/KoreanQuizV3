@@ -1,18 +1,2 @@
 {
-    "numbers": [
-      {
-        "korean": "일",
-        "sinhalese": "1"
-      },
-      {
-        "korean": "이",
-        "sinhalese": "2"
-      }
-    ],
-    "greetings": [
-      {
-        "korean": "안녕하세요",
-        "sinhalese": "ආයුබෝවන්"
-      }
-    ]
   }

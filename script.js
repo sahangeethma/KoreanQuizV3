@@ -19,11 +19,22 @@ let randomIndex;
 let currentWord;
 let incorrectAnswerIndexes = [];
 
+// // Fetch the vocabulary data from the JSON file
+// fetch("words.json")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     vocabularyData = data;
+//     loadQuiz();
+//   })
+//   .catch((error) => {
+//     console.error("Error fetching words:", error);
+//   });
+
 // Fetch the vocabulary data from the JSON file
 fetch("words.json")
   .then((response) => response.json())
   .then((data) => {
-    vocabularyData = data;
+    vocabularyData = Object.values(data).flat();
     loadQuiz();
   })
   .catch((error) => {
@@ -36,6 +47,7 @@ function loadQuiz() {
   showElement("main-buttons");
   hideElement("admin");
   hideElement("admin-buttons");
+  hideElement("customize");
 
   // Ensure we don't select the same word or the words before/after it
   do {
@@ -143,6 +155,7 @@ function showAdmin() {
   showElement("admin-buttons");
   hideElement("main-buttons");
   hideElement("quiz-container");
+  hideElement("customize");
 
   displayVocabularyData();
 }
@@ -152,6 +165,7 @@ function logout() {
   showElement("main-buttons");
   hideElement("admin");
   hideElement("admin-buttons");
+  hideElement("customize");
   correctCount = 0;
   wrongCount = 0;
 }
@@ -210,6 +224,15 @@ document.getElementById("w2json-btn").addEventListener("click", () => {
   window.location.replace("https://sahangeethma.github.io/Vocabulary2Json/");
 });
 
+document.getElementById("custom-button").addEventListener("click", () => {
+  var cuzDiv = document.getElementById("customize");
+  if (cuzDiv.style.display == "none") {
+    cuzDiv.style.display = "block";
+  } else {
+    cuzDiv.style.display = "none";
+  }
+});
+
 // Helper functions
 function showElement(id) {
   document.getElementById(id).style.display = "block";
@@ -225,4 +248,5 @@ window.onload = function () {
   showElement("main-buttons");
   hideElement("admin");
   hideElement("admin-buttons");
+  hideElement("customize");
 };

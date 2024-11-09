@@ -1,1 +1,18 @@
-[{"korean":"아기","sinhalese":"ළදරුවා "},{"korean":"아이","sinhalese":"ලමයා "},{"korean":"우유","sinhalese":"කිරි "},{"korean":"오이","sinhalese":"පිපිඤ්ඤ"},{"korean":"예","sinhalese":"ඔව් "},{"korean":"와","sinhalese":"Wow"},{"korean":"와요 [오다] ","sinhalese":"එනවා"},{"korean":"왜? ","sinhalese":"ඇයි? "},{"korean":"외워요 [외우다] ","sinhalese":"මතක තියාගන්නවා "},{"korean":"위에","sinhalese":"මත /උඩ "},{"korean":"가수","sinhalese":"ගායකයා "},{"korean":"네모","sinhalese":"චතුරශ්‍රය "},{"korean":"다리","sinhalese":"කකුල "},{"korean":"모자","sinhalese":"තොප්පිය "},{"korean":"사자","sinhalese":"සිංහයා "},{"korean":"새우","sinhalese":"ඉස්ස / කූනිස්සා"},{"korean":"소리","sinhalese":"ශබ්දය "},{"korean":"아버지","sinhalese":"තාත්තා "},{"korean":"지우개","sinhalese":"මකනය "},{"korean":"치마","sinhalese":"සාය "},{"korean":"코","sinhalese":"නහය "}]
+{
+    "numbers": [
+      {
+        "korean": "일",
+        "sinhalese": "1"
+      },
+      {
+        "korean": "이",
+        "sinhalese": "2"
+      }
+    ],
+    "greetings": [
+      {
+        "korean": "안녕하세요",
+        "sinhalese": "ආයුබෝවන්"
+      }
+    ]
+  }

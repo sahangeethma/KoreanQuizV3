@@ -22,11 +22,7 @@
           <button id="direction-button" class="btn btn-outline-primary mt-3">
             <img src="imgs/language-translation.png" style="width: 20px" />
           </button>
-          <button
-            id="custom-button"
-            class="btn btn-outline-dark mt-3"
-            disabled="true"
-          >
+          <button id="custom-button" class="btn btn-outline-dark mt-3">
             <img src="imgs/customize.png" style="width: 20px" />
           </button>
           <button
@@ -56,16 +52,30 @@
       </div>
       <div class="card p-4 mb-4" id="customize">
         <h2 class="mb-3">Customize</h2>
-        <div class="form-check form-switch">
+        <div class="form-check form-switch mb-3">
           <input
             class="form-check-input"
             type="checkbox"
             role="switch"
-            id="flexSwitchCheckDefault"
+            id="allOrEachLesson"
           />
-          <label class="form-check-label" for="flexSwitchCheckDefault"
+          <label class="form-check-label" for="allOrEachLesson"
             >Manual Select Category</label
           >
+        </div>
+
+        <div id="manualSelector" style="display: none">
+          <div class="mb-3">
+            <label for="word-category" class="form-label"
+              >Select The Lesson</label
+            >
+            <select class="form-select mb-2" id="word-category" required>
+              <option value="" disabled selected>Select a Lesson</option>
+            </select>
+          </div>
+          <div class="d-grid gap-2 d-flex justify-content-between">
+            <button id="" type="submit" class="btn btn-dark w-100">Set</button>
+          </div>
         </div>
       </div>
       <div class="card p-4" id="quiz-container">
